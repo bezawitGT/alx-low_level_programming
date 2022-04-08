@@ -6,16 +6,10 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	char i;
-	for(i = 'a'; i <='z'; i++ )
+	int i;
+	for(i = 0; i < 10; i++ )
 	{
-	if((i=='q') || (i=='e'))
-	{
-		continue; 
-	}else
-	{
-		putchar(i);
-	}
+		putchar((i%10)+'0');
 	}
 	putchar('\n');
 	return (0);
