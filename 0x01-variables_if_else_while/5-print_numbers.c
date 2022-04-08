@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include <time.h>
+/* more headers goes there */
+
+/* betty style doc for function main goes there */
+int main(void)
+{
+	int n[10];
+	for(i = 0; i < 10; i++ )
+	{
+		printf("%d", i);
+	{
+	putchar("\n");
+	return (0);
+}
