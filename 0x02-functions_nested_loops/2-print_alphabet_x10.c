@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
@@ -13,7 +12,7 @@ void print_alphabet_x10(void)
 	{
 		putchar(i);
 	}
-	putchar("\n");
+	putchar('\n');
 	j++;
 	}
 }
