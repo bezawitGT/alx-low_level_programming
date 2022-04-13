@@ -1,28 +1,32 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
+/**
+ * times_table - print the last digit of a number.
+ * 
+ * Return: nothing
+ */
 void times_table(void)
 {
-	for(int i=0;i<=9;i++)
+	int i=0;
+	
+	while(i <= 9)
 	{
-		for(int j=0;j<=9;j++)
+		int j=0;
+		
+		for(j <= 9)
 		{
-			int res=i*j;
-			char mult=res+'0';
-			if(sizeof(mult)==1)
+			int res = i * j;
+			char mult = res + '0';
+			
+			if (sizeof(mult) == 1)
 			{
-				mult=strcat(' ',mult);
+				mult = strcat(' ',mult);
 			}
 			printf("%c\,",mult);
+			j++;
 		}
 		printf("\n");
+		i++;
 	}
-}
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    times_table();
-    return (0);
 }
