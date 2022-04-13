@@ -1,32 +1,39 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
+/**
+ * jack_bauer  - print the last digit of a number.
+ * 
+ * Return: nothing
+ */
 void jack_bauer(void){
-	for(int i=0;i<=23;i++)
+	int i=0;
+	
+	while(i <= 23)
 	{
-		for(int j=0;j<=59;j++)
+		int j=0;
+		
+		while(j <= 59)
 		{
-			if(i<10)
+			if (i < 10)
 			{
-				char hr='0'+i;
-			}else{
-				char hr=i;
+				char hr = '0'+i;
 			}
-			if(j<10){
-				char min='0'+j;
-			}else{
-				char min=j;
+			else
+			{
+				char hr = i;
+			}
+			if (j < 10)
+			{
+				char min = '0'+j;
+			}else
+			{
+				char min = j;
 			}
 			printf("%c:%c\n",hr,min);
+			j++;
 		}
+		i++;
 	}
 	return;
-}
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    jack_bauer();
-    return (0);
 }

@@ -1,24 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-int print_last_digit(int);
+/**
+ * print_last_digit - print the last digit of a number.
+ * @n: accept input  parameter type int
+ * Return: las digit
+ */
+int print_last_digit(int n);
 {
-	
-}
-int main(void)
-{
-    int r;
-
-    r = _abs(-1);
-    printf("%d\n", r);
-    r = _abs(0);
-    printf("%d\n", r);
-    r = _abs(1);
-    printf("%d\n", r);
-    r = _abs(-98);
-    printf("%d\n", r);
-    return (0);
+	int i = (n % 10);
+	return (i);
 }
