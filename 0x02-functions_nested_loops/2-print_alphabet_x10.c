@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alphabet 10 times- prints the english alphabet from a-z.
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase, followed by a new line..
  * Return: Nothing.
  */
 void print_alphabet_x10(void)
