@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
-/* print_sign
-*
-/* betty style doc for function main goes there */
+/**
+ * print_sign - checks for alphabetic character.
+ * @n: accept input  parameter n of type int
+ * Return: 1 if c is a letter, lowercase or uppercase  0 otherwise.
+ */
 int print_sign(int n)
 {
 	if(n > 0)
