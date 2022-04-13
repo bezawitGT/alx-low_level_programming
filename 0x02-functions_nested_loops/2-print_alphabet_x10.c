@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_alphabet 10 times- prints the english alphabet from a-z.
