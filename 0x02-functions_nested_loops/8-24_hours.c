@@ -15,20 +15,22 @@ void jack_bauer(void){
 		
 		while(j <= 59)
 		{
+			char hr,min;
+			
 			if (i < 10)
 			{
-				char hr = '0'+i;
+				hr = '0'+i;
 			}
 			else
 			{
-				char hr = i;
+				hr = i;
 			}
 			if (j < 10)
 			{
-				char min = '0'+j;
+				min = '0'+j;
 			}else
 			{
-				char min = j;
+				min = j;
 			}
 			printf("%c:%c\n",hr,min);
 			j++;
