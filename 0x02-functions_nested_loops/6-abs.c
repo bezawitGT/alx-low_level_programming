@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _abs - checks for alphabetic character.
+ * _abs - computes the absolute value of an integer.
  * @n: accept input  parameter n of type int
  * Return: 1 and prints + if n is greater than zero
  */
