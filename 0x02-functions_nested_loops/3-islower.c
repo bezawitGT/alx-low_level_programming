@@ -1,8 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * checks for lowercase character.
+ * Returns 1 if c is lowercase.
+ * Returns 0 otherwise.
+ */
 int _islower(int c)
 {
 	if (c>=97){
