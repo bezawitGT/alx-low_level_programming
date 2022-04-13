@@ -1,7 +1,8 @@
 #include "main.h"
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * print_alphabet 10 times- prints the english alphabet from a-z.
+ * Return: Nothing.
+ */
 void print_alphabet_x10(void)
 {
 	int j = 0;
