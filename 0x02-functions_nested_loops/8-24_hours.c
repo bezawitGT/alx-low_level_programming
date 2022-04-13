@@ -6,36 +6,20 @@
  * 
  * Return: nothing
  */
-void jack_bauer(void){
-	int i=0;
-	
-	while(i <= 23)
+void jack_bauer(void)
+{
+	int hour, minute;
+
+	for (hour = 0; hour <= 23; hour++)
 	{
-		int j=0;
-		
-		while(j <= 59)
+		for (minute = 0; minute <= 59; minute++)
 		{
-			char hr,min;
-			
-			if (i < 10)
-			{
-				hr = '0'+i;
-			}
-			else
-			{
-				hr = i;
-			}
-			if (j < 10)
-			{
-				min = '0'+j;
-			}else
-			{
-				min = j;
-			}
-			printf("%c:%c\n",hr,min);
-			j++;
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
+			_putchar('\n');
 		}
-		i++;
 	}
-	return;
 }
