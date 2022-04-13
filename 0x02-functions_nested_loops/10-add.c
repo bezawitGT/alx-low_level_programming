@@ -2,12 +2,13 @@
 #include <stdio.h>
 /**
  * add- add two numbers.
- * @a,@b: int parameters
- * Return: nothing
+ * @a: int parameters
+ * @b: int parameters
+ * Return: sum
  */
 int add(int a, int b)
 {
-	int sum = a+b;
+	int sum = a + b;
 	
 	return (sum);
 }
