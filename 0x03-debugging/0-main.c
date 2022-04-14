@@ -8,11 +8,9 @@
 int main(void)
 {
         int i;
-		char c;
 
         i = 0;
-        c=positive_or_negative(i);
-		_putchar(c + '0');
+        positive_or_negative(i);
 		
         return (0);
 }
