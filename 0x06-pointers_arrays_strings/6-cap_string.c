@@ -2,34 +2,30 @@
 #include "main.h"
 /**
  * *cap_string - capitalize a sting.
- * @c: accept input  parameter c of type int
+ * @s: accept input  parameter c of type int
  * Return:  char
  */
-char *cap_string(char *c)
+char *cap_string(char *s)
 {
-	int i,j,k;
-	char pre=' ';
-	char separators[]= {',',';','.','!','?','\"','(',')','{','}','\n','\t',' ','\0'};
-	
-	for(i = 0; c[i] != '\0'; i++)
-	{
-			for(j = 0; separators[j] != '\0';j++)
-			{
-				if(pre == separators[j])
-				{
-					k = 1;
-				}
-				else
-				{
-					k = 0;
-				}
-			}
-			if((k == 1 ) && (((c[i] <= 122) && (c[i] >= 97)) || ((c[i] <= 65 ) && (c[i] >= 65))))
-			{
-				c[i] = c[i]-32;
-			}
-			pre=c[i];
+	int i;
 
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[0] >= 'a' && s[0] <= 'z')
+		{
+			s[0] = s[0] - 32;
 		}
-	return c;
+		if (s[i] == ' ' || s[i] == '.' || s[i] == '\t' || s[i] == '\n' || s[i] == ','
+				|| s[i] == ';' || s[i] == '!' || s[i] == '?' || s[i] == '('
+				|| s[i] == ')' || s[i] == '{' || s[i] == '}')
+		{
+			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+			{
+				s[i + 1] = s[i + 1] - 32;
+			}
+		}
+		i++;
+	}
+	return (s);
 }
