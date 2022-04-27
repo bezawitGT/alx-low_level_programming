@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
  * _pow_recursion - checks the input number from n to the base
- * @n: number is squared and compared against base
- * @base: base number to check
- * Return: natural square root of number base
+ * @x: number is squared and compared against y
+ * @y: y number to check
+ * Return: natural square root of number y
  */
 int _pow_recursion(int x, int y)
 {
