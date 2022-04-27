@@ -11,7 +11,7 @@ int _pow_recursion(int x, int y)
 		return (x);
 	if (x * x > y)
 		return (-1);
-	return ( _pow_recursion(x + 1, y));
+	return (_pow_recursion(x + 1, y));
 }
 /**
  * _sqrt_recursion - return the natural square root of a number n.
