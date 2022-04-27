@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * is_prime - find a prime number
  * @i: input int i
@@ -19,15 +18,17 @@ int is_prime(int i, int j)
 	}
 	return (is_prime(i, j - 1));
 }
+
  /**
-  * factorial - printing prime numbers
+  * is_prime_number - printing prime numbers
   * @n: input integer value
   *
   * Description: returns 1 if the input integer is a
   * prime number, otherwise return 0
   * Return: returns the state of the inout value
   */
-int factorial(int n)
+
+int is_prime_number(int n)
 {
 	if (n < 3)
 	{
