@@ -18,7 +18,6 @@ int is_prime(int i, int j)
 	}
 	return (is_prime(i, j - 1));
 }
-
  /**
   * is_prime_number - printing prime numbers
   * @n: input integer value
@@ -27,7 +26,6 @@ int is_prime(int i, int j)
   * prime number, otherwise return 0
   * Return: returns the state of the inout value
   */
-
 int is_prime_number(int n)
 {
 	if (n < 3)
