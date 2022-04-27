@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * _pow_recursion - checks the input number from n to the base
  * @x: number is squared and compared against y

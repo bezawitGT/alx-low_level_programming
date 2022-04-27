@@ -29,7 +29,7 @@ int is_prime(int i, int j)
   * Return: returns the state of the inout value
   */
 
-int _sqrt_recursion(int n)
+int is_prime_number(int n)
 {
 	if (n < 3)
 	{
@@ -37,4 +37,3 @@ int _sqrt_recursion(int n)
 	}
 	return (is_prime(n, n - 1));
 }
-
