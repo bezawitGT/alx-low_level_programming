@@ -21,7 +21,7 @@ int is_prime(int i, int j)
 }
 
  /**
-  * _sqrt_recursion - printing prime numbers
+  * is_prime_number - printing prime numbers
   * @n: input integer value
   *
   * Description: returns 1 if the input integer is a
@@ -37,3 +37,4 @@ int _sqrt_recursion(int n)
 	}
 	return (is_prime(n, n - 1));
 }
+
