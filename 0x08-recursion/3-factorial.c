@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - return string len
- * @s: input string
+ * factorial - return string len
+ * @n: input string
  *
- * Description: returns the length of a string
- * Return: returns string len
+ * Description: returns the factorial of a numb
+ * Return: returns int len
  */
 
 int factorial(int n)
