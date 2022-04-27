@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
- * checker - checks the input number from n to the base
+ * _pow_recursion - checks the input number from n to the base
  * @n: number is squared and compared against base
  * @base: base number to check
  * Return: natural square root of number base
  */
-int checker(int n, int base)
+int _pow_recursion(int x, int y)
 {
-	if (n * n == base)
-		return (n);
-	if (n * n > base)
+	if (x * x == y)
+		return (x);
+	if (x * x > y)
 		return (-1);
-	return (checker(n + 1, base));
+	return ( _pow_recursion(x + 1, y));
 }
 /**
  * _sqrt_recursion - return the natural square root of a number n.
@@ -20,5 +20,5 @@ int checker(int n, int base)
  */
 int _sqrt_recursion(int n)
 {
-	return (checker(1, n));
+	return (_pow_recursion(1, n));
 }
