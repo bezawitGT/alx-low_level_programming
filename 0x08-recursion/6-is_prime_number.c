@@ -21,7 +21,7 @@ int is_prime(int i, int j)
 }
 
  /**
-  * is_prime_number - printing prime numbers
+  * factorial - printing prime numbers
   * @n: input integer value
   *
   * Description: returns 1 if the input integer is a
@@ -29,7 +29,7 @@ int is_prime(int i, int j)
   * Return: returns the state of the inout value
   */
 
-int is_prime_number(int n)
+int factorial(int n)
 {
 	if (n < 3)
 	{
