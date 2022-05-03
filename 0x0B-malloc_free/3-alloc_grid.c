@@ -9,7 +9,7 @@
  *
  * Return: returns NULL on failure
  */
-
+ 
 int **alloc_grid(int width, int height)
 {
 	int **arr;
