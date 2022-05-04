@@ -14,6 +14,10 @@ int main(int argc, char *argv[])
 
 	res = 0;
 
+	if (argc == 1)
+	{
+		return (printf("0\n"), 0);
+	}
 	for (i = 0; i < argc; i++)
 	{
 		if (i > 0)
