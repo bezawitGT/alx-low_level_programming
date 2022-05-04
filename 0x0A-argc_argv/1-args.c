@@ -1,18 +1,23 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * main - check the code
- * @argc: number of elements passed to cmd
- * @argv: array that holds char
- * Return: Always 0.
+ * main - prints file name
+ * @argc: first parameter
+ * @argv: second parameter
+ *
+ * Description: a program that prints its name
+ * Return: Always(0) Success
  */
-int main(int argc,char* argv[])
+
+int main(int argc, char **argv)
 {
-	if(argv[0])
+	int sum;
+
+	for (sum = 0; sum < argc; sum++)
 	{
-		printf("%d\n",argc);
+		*argv[sum] = *argv[sum];
 	}
-    return (0);
+	printf("%d\n", (sum - 1));
+	return (0);
 }
