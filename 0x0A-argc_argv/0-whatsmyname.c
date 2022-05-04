@@ -6,6 +6,8 @@
  * main - check the code
  * @argc: number of elements passed to cmd
  * @argv: array that holds char
+ *
+ * Description: a program that prints its name
  * Return: Always 0.
  */
  
