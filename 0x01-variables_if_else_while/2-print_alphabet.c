@@ -1,16 +1,16 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
 int main(void)
 {
-	char i;
-	for(i = 'a'; i <='z'; i++ )
+	int i;
+	char alp[]="abcdefghijklmnopqrstuvwxyz";
+	for(i = 0; i < 26; i++ )
 	{
-		putchar(i);
+		putchar(alp[i]);
 	}
-	putchar('\n');
-	return (0);
+	putchar("\n");
 }
+	return (0);
